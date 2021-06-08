@@ -1,8 +1,9 @@
 # picker_whell
 
-A new Flutter plugin.
 
-https://user-images.githubusercontent.com/64318805/121217859-ea7c7880-c88a-11eb-91ab-e004c1305722.mp4
+
+![video](https://user-images.githubusercontent.com/64318805/121222294-17cb2580-c88f-11eb-9bdb-fe9c8137b79e.gif)
+
 
 
 
