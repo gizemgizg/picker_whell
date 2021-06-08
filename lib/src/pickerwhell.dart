@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
 
 class PickerWhell extends StatefulWidget {
-  const PickerWhell({Key? key}) : super(key: key);
+
+  final double itemWidth ;
+  final int itemCount ;
+
+
+  const PickerWhell({Key? key, this.itemCount =100, this.itemWidth=50}) : super(key: key);
 
   @override
   _PickerWhellState createState() => _PickerWhellState();
 }
 
 class _PickerWhellState extends State<PickerWhell> {
-
-  double itemWidth = 50.0;
-  int itemCount = 100;
   int selected = 1;
+
+
 
   final FixedExtentScrollController _scrollController = FixedExtentScrollController(initialItem: 0);
 
@@ -51,9 +55,9 @@ class _PickerWhellState extends State<PickerWhell> {
             print(selected);
           },
           controller: _scrollController,
-          itemExtent: itemWidth,
+          itemExtent: widget.itemWidth,
           children: List.generate(
-              itemCount,
+              widget.itemCount,
                   (x) => RotatedBox(
                   quarterTurns: 1,
                   child: AnimatedContainer(

@@ -24,7 +24,10 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Picker Whell'),
         ),
         body: Center(
-          child: PickerWhell()
+          child: PickerWhell(
+            itemCount: 100,
+            itemWidth: 50,
+          )
         ),
       ),
     );
